@@ -1,0 +1,295 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url(images/floor-tile.png);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+    text-align: center;
+
+    padding: 10px;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+main {
+    width: 90%;
+    grid-area: main;
+}
+
+nav {
+    grid-area: nav;
+    text-align: center;
+    padding: 5px;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    padding: 10px;
+}
+
+header {
+    background: #000000;
+    color: #ffffff;
+}
+
+nav {
+    background: #333;
+}
+
+footer {
+    background: #000000;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: green;
+    font-size: medium;
+    background-color: beige;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+    margin-top: 15px;
+}
+
+.profile {
+    text-align: center;
+    margin-left: 12%;
+}
+
+.profile-pic {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    margin-top: 20px;
+
+    border: 2px solid transparent;
+    animation: borderColorAnimation 3s infinite;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 2px solid darkred;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #1f1f1f;
+    color: #ffffff
+}
+
+tr {
+    background: lightgray;
+}
+
+table.courses {
+    margin-bottom: 20px;
+}
+
+.courses tr:hover {
+    background: #e4e0e0;
+}
+
+.courses tr:nth-child(even) {
+    background: #c8c6c6;
+}
+
+.courses tr:nth-child(even):hover {
+    background: #a8afa8;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+textarea:focus {
+    background: #e4e0e0;
+}
+
+input:required,
+textarea:required {
+    border: 2px solid red;
+}
+
+.about p:first-of-type::first-letter {
+    font-size: 2em;
+    color: darkred;
+    font-weight: bold;
+}
+
+#sub_title {
+    font-size: small;
+    color: darkgoldenrod;
+}
+
+.left-side-header {
+    float: left;
+}
+
+.right-side-header {
+    float: right;
+}
+
+.social-media-icon {
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+    transition-duration: 1s;
+}
+
+.social-media-icon:hover {
+    width: 30px;
+    height: 30px;
+    color: pink;
+    transition-duration: 1s;
+}
+
+.title {
+    border-bottom-color: darkgray;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.left-side-menu {
+    font-size: larger;
+    list-style: none;
+    padding: 0;
+    border-radius: 5px;
+}
+
+.left-side-menu:hover {
+    cursor: pointer;
+    background-color: lightcoral;
+}
+
+.left-side-menu li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+a:hover {
+    color: darkgreen;
+    background-color: lightsalmon;
+}
+
+.left-side-menu a {
+    margin: 15px;
+    color: darkgreen;
+    background-color: transparent;
+}
+
+@keyframes borderColorAnimation {
+    0% {
+        border-color: red;
+    }
+
+    20% {
+        border-color: orange;
+    }
+
+    40% {
+        border-color: yellow;
+    }
+
+    60% {
+        border-color: limegreen;
+    }
+
+    80% {
+        border-color: blue;
+    }
+
+    100% {
+        border-color: red;
+    }
+}
+
+.form-div {
+    display: block;
+    margin: 15px;
+}
+
+.message_type {
+    cursor: pointer;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-submit {
+    width: 20%;
+    padding: 10px;
+    margin: 5px;
+    margin-left: 0;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    background-color: #333;
+    color: #ffffff;
+    animation: borderColorAnimation 3s infinite;
+    transition-duration: .75s;
+}
+
+.form-submit:hover {
+    cursor: pointer;
+    background-color: #000000;
+    opacity: 1;
+    scale: 1.25 ;
+    transition-duration: 1s;
+}
+
+.form-submit:active {
+    background-color: #444;
+}

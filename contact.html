@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayan Alkarmo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="left-side-header">
+            <h1>
+                Rayan Alkarmo
+                <span id="sub_title">IT Student</span>
+            </h1>
+        </div>
+
+        <div class="right-side-bar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">CV</a></li>
+                    <li><a href="schedule.html">Class Schedule</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main class="grid-container">
+        <aside class="profile">
+            <img src="images/profile.jpg" alt="Rayan Alkarmo" class="profile-pic">
+
+            <h2 class="title">Contact</h2>
+            <p>Email: <a href="mailto:ralkarmo@stu.kau.edu.sa">ralkarmo@stu.kau.edu.sa</a></p>
+            <p>Phone: <a href="+966538436781">+966538436781</a></p>
+            <div>
+                <a target="_blank" href="https://x.com/RxRzZ"> <img class="social-media-icon" src="images/x.png"
+                        alt="X icon"></a>
+                <a target="_blank" href="https://www.linkedin.com"> <img class="social-media-icon"
+                        src="images/linkedin.png" alt="linkedin"></a>
+            </div>
+        </aside>
+
+        <section class="content">
+            <h2 class="title">Contact Me</h2>
+            <form action="https://webhook.site/71101a47-69a4-41d1-8209-c6a9fb65cdbf" method="post">
+                <div class="form-div">
+                    <label for="name">Name</label>
+                    <input class="form-control" type="text" id="name" name="name" required>
+                </div>
+                <div class="form-div">
+                    <label for="email">Email</label>
+                    <input class="form-control" type="text" id="email" name="email">
+                </div>
+                <div class="form-div">
+                    <label for="message">Message Box</label>
+                    <textarea rows="15" class="form-control" type="text" id="message" name="message"
+                        required></textarea>
+                </div>
+                <div class="form-div">
+                    <label for="message_type">Message Type:</label>
+                    <input class="message_type" type="radio" name="message_type" id="complaint" value="complaint"
+                        required>
+                    <label for="complaint">Complaint</label>
+                    <input class="message_type" type="radio" name="message_type" id="inquiry" value="inquiry" required>
+                    <label for="inquiry">Inquiry</label>
+                </div>
+                <div class="form-div">
+                    <input class="form-submit" type="submit" value="Send">
+                </div>
+            </form>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2025 Rayan Alkarmo</p>
+    </footer>
+
+</body>
+
+</html>
